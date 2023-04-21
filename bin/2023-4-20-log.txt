@@ -99,3 +99,8 @@
 22-25-12 => [info]service_name:FriendServiceRpc
 22-25-12 => [info]method_name:GetFriendsList
 22-25-12 => [info]RpcProvider start service at ip::127.0.0.1 port:8080
+23-50-7 => [error]first log message!
+23-50-7 => [error]/home/zixuanhuang/mprpc/example/callee/friendservice.cc:main:43
+23-50-7 => [info]service_name:FriendServiceRpc
+23-50-7 => [info]method_name:GetFriendsList
+23-50-7 => [info]RpcProvider start service at ip::127.0.0.1 port:8080

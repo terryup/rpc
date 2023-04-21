@@ -81,6 +81,8 @@ mprpcapplication.h
 /home/zixuanhuang/mprpc/example/caller/mprpcapplication.h
 friend.pb.h
 /home/zixuanhuang/mprpc/example/caller/friend.pb.h
+mprpcchannel.h
+/home/zixuanhuang/mprpc/example/caller/mprpcchannel.h
 
 /home/zixuanhuang/mprpc/example/friend.pb.cc
 friend.pb.h

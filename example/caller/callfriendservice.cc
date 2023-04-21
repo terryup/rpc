@@ -1,6 +1,7 @@
 #include <iostream>
 #include "mprpcapplication.h"
 #include "friend.pb.h"
+#include "mprpcchannel.h"
 
 
 int main(int argc, char **argv) {
@@ -19,7 +20,9 @@ int main(int argc, char **argv) {
     stub.GetFriendsList(&controller, &request, &response, nullptr);   //  RpcChannel->RpcChannel::callMethod 集中来做所有rpc请求调用的参数序列化和网络发送
 
     //  一次rpc调用完成，读调用的结果
-    if(!controller.Failed()){
+    //  bug 逻辑错误(这里) RPC方法执行过程中的状态 如果为false就报错，如果为true调用成功
+    //  if(!controller.Failed()){
+    if(controller.Failed()){
         std::cout << controller.ErrorText() << std::endl;
     }
     else{
@@ -34,5 +37,6 @@ int main(int argc, char **argv) {
         std::cout << "rpc GetFriendsList response:" << response.result().errmsg() << std::endl;
         }
     }
+    
 
 }
