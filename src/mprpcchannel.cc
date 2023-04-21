@@ -86,8 +86,8 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     zkcli.Start();
     //  /UserServiceRpc/Login   bug=>漏了一个“/”  
     std::string method_path = "/" + service_name + "/" + method_name;
-    //  127.0.0.1:8080
-    std::string host_data = zkcli.GetData(method_name.c_str());
+    //  127.0.0.1:8080      bug=>method_path写成了mathod_name
+    std::string host_data = zkcli.GetData(method_path.c_str());
     if(host_data == ""){
         controller->SetFailed(method_path + "is not exist!");
         return;
