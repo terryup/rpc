@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/example",
+                "${workspaceFolder}/src/include"
+            ],
+            "name": "ROS"
+        }
+    ],
+    "version": 4
+}
