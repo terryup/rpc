@@ -25,7 +25,7 @@
 
 ## 代码交互
 
-![](/Users/zixuanhuang/Desktop/MPRPC.png)
+![image](https://github.com/terryup/rpc/blob/mprpc/MPRPC.png)
 
 ## 构建项目
 
