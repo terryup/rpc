@@ -24,11 +24,11 @@
 
 ## RPC通信原理
 
-[]()
+[](https://github.com/terryup/rpc/blob/mprpc/%E6%A1%86%E6%9E%B6.png)
 
 ## 代码交互
 
-![](/Users/zixuanhuang/Desktop/MPRPC.png)
+![](https://github.com/terryup/rpc/blob/mprpc/MPRPC.png)
 
 ## 构建项目
 
